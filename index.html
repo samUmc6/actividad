@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Actividad 3</title>
+</head>
+<body bgcolor="#CFECEC">
+	<style >
+	.nombre{
+		   	position: absolute;
+    	top: 310px;
+    	left: 160px;
+    	border:solid black  2px;
+    	width: 200px;
+    	height: 40px;
+	}
+	.cua{
+    	position: absolute;
+   		top: 50px;
+   		left: 350px;
+   		border: solid black 5px;
+   		width: 500px;
+   		height: 250px;
+   		background:#56A5EC;
+    }
+
+    .lola{
+    	position: absolute;
+    	top: 200px;
+    	left: 130px;
+    	border: solid black 1px;
+    	width: 250px;
+    	height: 40px;
+    	background: #B7CEEC;
+    
+    }
+    .loli{
+    	position: absolute;
+  		top: 200px;
+   		left: 600px;
+   		border: solid black 5px;
+   		width: 200px;
+   		height: 250px;
+   		font-size: 25px;
+   		background: #C3FDB8;
+    }
+
+	</style>
+	<div class="cua">
+		 	<script>
+	function calcu(){
+	h=dato1.value
+	l=Number(dato2.value);
+	p=Number(dato3.value);
+	j=Number(dato4.value);
+	producto=p*l;
+	resul=j-producto;
+			eje.innerHTML="Has comprado "+p+" de "+h +" a un total de "+producto+" se te devuelve "+resul;
+
+	}
+	
+ 	</script>
+ 
+	<form> 
+		<center>
+		<label>Tienda Doña Marce</label>
+		<br>
+		<label>Chocolate:  3500</label>
+        <br>
+		<label>Doritos:  2000</label>
+		<br>
+		<label>Papitas:  2500</label>
+		<br>
+		<br>
+		<input type="text" id="dato4" placeholder="Mi dinero">
+		<input type="text" id="dato2" placeholder="Precio">
+		<input type="text" id="dato1" placeholder="Producto">
+		<input type="text" id="dato3" placeholder="Cantidad">
+		
+		
+
+		<div class="loli">
+		<center>
+		<label>Alacena</label>
+		<br>
+		<label>Papitas:  10</label>
+        <br>
+		<label>Chocolate:  10</label>
+		<br>
+		<label>Doritos:  10</label>
+		</div>
+
+	</center>
+	<center><div class="lola" onclick="calcu()" id="eje">Ejecutar</div></center>
+	</form>
+</body>
+</html>
